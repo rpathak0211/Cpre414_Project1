@@ -33,7 +33,106 @@
       <Dimension>
         <ID>Dim Reseller</ID>
       </Dimension>
+      <Dimension>
+        <ID>Dim Date 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fact Internet Sales</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Product 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fact Sales Quota</ID>
+      </Dimension>
     </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>AdventureWorksCube</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Dim Date</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Date</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Internet Sales</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Internet Sales</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Product</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Product</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Customer</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Customer</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Employee</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Employee</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Sales Quota</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Sales Quota</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Geography</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Geography</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Organization</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Organization</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Reseller</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Reseller</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Currency Rate</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Currency Rate</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
     <DataSourceImpersonationInfo>
       <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
       <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>

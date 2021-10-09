@@ -6,6 +6,18 @@
     <Name>Project 1.database</Name>
     <FullPath>Project 1.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>AdventureWorksCube.cube</Name>
+      <FullPath>AdventureWorksCube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>AdventureWorksCube.partitions</Name>
+          <FullPath>AdventureWorksCube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
   <Dimensions>
     <ProjectItem>
       <Name>Dim Currency.dim</Name>
@@ -34,6 +46,22 @@
     <ProjectItem>
       <Name>Dim Reseller.dim</Name>
       <FullPath>Dim Reseller.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Date 1 1.dim</Name>
+      <FullPath>Dim Date 1 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Internet Sales 1.dim</Name>
+      <FullPath>Fact Internet Sales 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Product 1.dim</Name>
+      <FullPath>Dim Product 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Sales Quota.dim</Name>
+      <FullPath>Fact Sales Quota.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
